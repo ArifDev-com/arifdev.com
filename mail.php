@@ -1,6 +1,7 @@
 <?php
 
-if(isset($_POST['message'])) {
+if(isset($_POST['message'])) 
+{
 
     $to = "imdarif122@gmail.com,contact@arifdev.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
@@ -15,4 +16,4 @@ if(isset($_POST['message'])) {
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 }
 header('Location: /thank-you.html');
-exit;
+exit();
